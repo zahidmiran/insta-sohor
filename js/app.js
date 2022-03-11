@@ -27,7 +27,7 @@ const reportPost = (id) => {
 };
 
 const displayContent = (text) => {
-  return text.length < 30 ? 'text' : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
+  return text.length < 30 ? 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti commodi reiciendis vitae non, eos illum fugit tempore dolor deleniti architecto porro accusantium. Vel aliquid, minus obcaecati voluptatum vero suscipit consectetur!' : text.slice(0, 30) + "<span class='fw-bold'>... read more</span>";
 };
 
 const switchTab = (id) => {
@@ -95,8 +95,7 @@ const createPost = (post) => {
 
                   <div class="post__indicators"></div>
 
-                  <button class="post__button post__button--align-right" onclick="reportPost(${post.id
-    })">
+                  <button class="post__button post__button--align-right" onclick="reportPost(${post.id})">
                     <i class="fa-solid fa-ban"></i>
                   </button>
                 </div>
